@@ -1,0 +1,87 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Gradle
+.gradle/
+**/build/
+
+# Kotlin
+.kotlin/
+
+# JVM
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# Logs
+*.log
+logs/
+
+# Spring Boot
+application-local.yml
+application-local.yaml
+application-local.properties
+application-dev.yml
+application-dev.yaml
+application-dev.properties
+application-secret.yml
+application-secret.yaml
+application-secret.properties
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Kafka runtime data
+kafka-logs/
+zookeeper/
+zookeeper-logs/
+meta.properties
+*.log.*
+*.index
+*.timeindex
+*.snapshot
+*.checkpoint
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+*.h2.db
+*.mv.db
+*.trace.db
+derby.log
+data/
+
+# Test and coverage reports
+coverage/
+.coverage
+htmlcov/
+test-results/
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Keep Gradle wrapper executable from source control.
+!gradle/wrapper/gradle-wrapper.jar
