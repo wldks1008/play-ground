@@ -1,3 +1,27 @@
 spring:
   application:
     name: playground-spring
+  task:
+    scheduling:
+      # Spring Boot의 ThreadPoolTaskScheduler 기본 풀 크기도 1이다.
+      pool:
+        size: 1
+      thread-name-prefix: study-scheduler-
+
+study:
+  scheduler:
+    # 학습용 작업은 애플리케이션 실행 시 명시적으로 활성화한다.
+    enabled: false
+    slow-job:
+      fixed-rate: 5s
+      initial-delay: 0s
+      work-duration: 4s
+    heartbeat:
+      fixed-rate: 1s
+      initial-delay: 500ms
+  event-buffer:
+    enabled: false
+    demo-enabled: false
+    high-watermark: 5
+    low-watermark: 2
+    item-processing-duration: 500ms

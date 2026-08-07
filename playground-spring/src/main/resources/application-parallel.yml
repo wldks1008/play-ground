@@ -1,0 +1,6 @@
+spring:
+  task:
+    scheduling:
+      # 두 작업이 서로를 막지 않도록 스케줄러 워커를 2개로 늘린다.
+      pool:
+        size: 2
